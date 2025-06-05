@@ -8,5 +8,5 @@ else
   echo "✅ data.json already exists"
 fi
 
-# Start json-server with the data.json
-json-server --watch data.json --host 0.0.0.0 --port 10000
+# Start custom json-server with auth
+node server.js

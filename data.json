@@ -6,27 +6,6 @@
       "firstName": "Hossam",
       "lastName": "Shaaban",
       "id": 1
-    },
-    {
-      "email": "hoss@gmail.com",
-      "password": "$2a$10$R8nx6GO10iml0joIkNWO7u5P6/BgkQ57.vVHv1rMFN5NqFe1Kmjp.",
-      "firstName": "Hossam",
-      "lastName": "Shaaban",
-      "id": 2
-    },
-    {
-      "email": "gaza@gmail.com",
-      "password": "$2a$10$Ww0z/sX6vRNb8vSpvPuWj.E9uPY.1k1keaMa0rIRQA7SZ9iH3yz72",
-      "firstName": "gaza",
-      "lastName": "hossam",
-      "id": 3
-    },
-    {
-      "email": "rte@gmai.lcom",
-      "password": "$2a$10$9pj4gVDqFfRmpfaVJXorvek6CwkXK4y5M/C4UcxbCMu50cCNaTQYK",
-      "firstName": "545",
-      "lastName": "545",
-      "id": 4
     }
   ],
   "categories": [
