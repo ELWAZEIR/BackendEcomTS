@@ -1,17 +1,22 @@
 const fs = require('fs');
-
-if (!fs.existsSync('data.json')) {
-  fs.copyFileSync('db.json', 'data.json');
-  console.log('📁 Copied db.json to data.json');
-}
-
 const jsonServer = require('json-server');
 const auth = require('json-server-auth');
+
+const dataFile = 'data.json';
+const defaultFile = 'db.json';
+
+// نسخ db.json إلى data.json إذا ما كانت موجودة
+if (!fs.existsSync(dataFile)) {
+  fs.copyFileSync(defaultFile, dataFile);
+  console.log(`📁 Copied ${defaultFile} to ${dataFile}`);
+}
+
 const server = jsonServer.create();
-const router = jsonServer.router('data.json');
+const router = jsonServer.router(dataFile);
 const middlewares = jsonServer.defaults();
 
 server.db = router.db;
+
 const rules = auth.rewriter({
   users: 600,
   products: 644,
